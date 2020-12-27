@@ -1,0 +1,167 @@
+:root {
+  /*Primary */
+  --Red: hsl(0, 78%, 62%);
+  --Cyan: hsl(180, 62%, 55%);
+  --Orange: hsl(34, 97%, 64%);
+  --Blue: hsl(212, 86%, 64%);
+  /* Neutral */
+  --Very-Dark-Blue: hsl(234, 12%, 34%);
+  --Grayish-Blue: hsl(229, 6%, 66%);
+  --Very-Light-Gray: hsl(0, 0%, 98%);
+  /* Size */
+  --Font-size: 15px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  text-align: center;
+  overflow: hidden;
+  height: 100vh;
+  background-color: hsl(0, 0%, 98%);
+}
+
+section {
+  font-family: 'Poppins', sans-serif;
+  padding: 3rem 8rem;
+  font-size: 15px;
+}
+
+p {
+  color: hsl(229, 6%, 66%);
+}
+
+
+
+
+/* HEADER */
+.title {
+  max-width: 500px;
+  margin: 0 auto 70px auto;
+}
+
+h2 {
+  font-size: 34px;
+  margin-bottom: 20px;
+}
+
+.title-text1 {
+  font-weight: 300;
+}
+
+.title-text2 {
+  color: hsl(234, 12%, 34%);
+}
+.title-text3 {
+  line-height: 1.5;
+}
+
+
+
+/* CONTENT */
+.container-column{
+  flex-direction: column;
+  justify-content: center;
+  flex-basis: 350px;
+  height: 200px;
+  max-height: 200px;
+  padding: 20px 15px;
+}
+.container {
+  display: flex;
+  justify-content: center;
+}
+.box{
+  box-sizing: content-box;
+  text-align: left;
+  background-color: #fff;
+  flex-basis: 284px;
+  height: 200px;
+  max-height: 200px;
+  border-radius: 9px;
+  margin-top: 30px;
+  margin-right: 30px;
+  padding: 20px;
+  -webkit-box-shadow: -12px 13px 25px 3px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: -12px 13px 25px 3px rgba(34, 60, 80, 0.2);
+  box-shadow: -12px 13px 25px 3px rgba(34, 60, 80, 0.2);
+}
+#first-box {
+  border-top: 3px solid hsl(180, 62%, 55%);
+  margin-top: 150px;
+}
+#second-box {
+  border-top: 3px solid hsl(0, 78%, 62%);
+}
+#third-box {
+  border-top: 3px solid hsl(34, 97%, 64%);
+}
+#fourth-box {
+  border-top: 3px solid hsl(212, 86%, 64%);
+  margin-top: 150px;
+}
+.heading{
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+.text{
+  font-size: 13px;
+}
+.image-info{
+  float: right;
+  margin-top: 45px;
+}
+
+
+
+@media screen and (max-width: 660px) {
+  body{
+    text-align: left;
+    overflow: auto;
+    height: auto;
+  }
+  .title{
+    max-width: none;
+  }
+  h2{
+    font-size: 18px;
+  }
+  .title-text3{
+    font-size: 15px;
+    width: 300px;
+  }
+  .container{
+    display: flex;
+    flex-direction: column;
+    margin-top: -150px;
+    align-items: center;
+    width:auto;
+    min-width: 300px;
+    width: 300px;
+    justify-content: flex-start;
+
+  }
+  .container-column{
+    height: auto;
+    max-height: inherit;
+    min-width: 300px;
+    width: 300px;
+  }
+  #first-box {
+  margin-right: 0px;
+  }
+  #second-box {
+  margin-right: 0px;
+  }
+  #third-box {
+  margin-right: 0px;
+  }
+  #fourth-box {
+    margin: 0;
+    min-width: 230px;
+    width: 260px;
+  }
+}
